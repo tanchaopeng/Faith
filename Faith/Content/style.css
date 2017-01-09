@@ -1,0 +1,106 @@
+﻿
+/*
+    字体： #49505A
+    链接： #EB8972
+    蒙版： #627287
+*/
+
+html {
+font-family:Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+font-size:4px;
+padding:0;
+margin:0;
+color:#49505A;
+}
+body {
+    padding:0;
+    margin:0;
+}
+.main-top {
+height:14rem;
+width:100%;
+text-align:center;
+border-bottom:.25rem solid #f1f1f1;
+}
+.page-title {
+    font-size:6rem;
+    line-height:14rem;
+}
+    .page-title a {
+    text-decoration:none;
+    color:#49505A;
+    }
+.page-title-icon {
+    position:relative;
+    width:4rem;
+    height:4rem;
+}
+
+.main-center {
+    padding:0 4rem;
+}
+.list-item {
+    height: 12rem;
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 3rem 0;
+    /*border-bottom: .25rem solid #fbfbfb;*/
+}
+.list-item-title {
+    line-height: 7.5rem;
+    font-size: 5rem;
+}
+.list-item-title-small {
+    font-size: 3.5rem;
+    color:#999;
+}
+.list-item-img-left {
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    float: left;
+}
+.list-item-img-right {
+    width: 2rem;
+    height: 12rem;
+    float: right;
+}
+
+.main-nav {
+    width: 80%;
+    left: 0;
+    height: 100%;
+    background: url(http://pic.qiantucdn.com/58pic/25/64/38/52M58PICYQU_1024.jpg) no-repeat;
+    position: absolute;
+    z-index: 1000;
+    transition: .4s;
+}
+.main-nav-close {
+    left:-80%;
+    transition:.4s;
+}
+
+.progress-bar {
+    position:fixed;
+    width:50%;
+    height:1.25rem;
+    border:.2rem solid #040404; 
+    background:#fff;
+    padding:.25rem;
+    left:25%;
+    top:40%;
+}
+.progress-blue {
+    background: #0278cf;
+    width: 0%;
+    height: 1.25rem;
+    transition: 1s;
+    /*animation: progress-ani 5s ;*//*infinite*/
+    float:right;
+}
+.progress-sucess {
+    width: 100%;
+    transition:1s;
+    float:left;
+}

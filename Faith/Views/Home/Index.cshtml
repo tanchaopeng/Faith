@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<div class="main-nav main-nav-close">
+
+</div>
+<div>
+    <div class="progress-bar">
+        <div class="progress-blue">
+
+        </div>
+    </div>
+</div>
+<div class="main-top">
+    <div class="page-title">
+        <img class="page-title-icon" id="menu"  style="margin-left:4rem;margin-top:5rem;float:left;" src="http://www.iconsvg.com/Public/1333158652084740096/%E8%8F%9C%E5%8D%95_menu55.svg"/>
+        <img class="page-title-icon" style="margin-right:4rem;margin-top:5rem;float:right;" src="http://www.iconsvg.com/Public/1333158587486167040/%E6%90%9C%E7%B4%A2_search82.svg"/>
+
+        <a href="#">
+            我是一个标题
+        </a>
+    </div>
+
+    <div class="main-center">
+        <div class="list">
+            <div class="list-item">
+               <img class="list-item-img-left" src="http://img1.imgtn.bdimg.com/it/u=1061187488,1643887661&fm=23&gp=0.jpg" />
+                <div style="width:calc(100% - 19rem);float:left;padding-left:2rem;">
+                    <span class="list-item-title">中共十八大以来打虎拍蝇 </span>
+                    <br />
+                    <span class="list-item-title-small">2017-01-06 11:21:30 </span>
+                </div>
+                <img class="list-item-img-right" src="http://www.iconsvg.com/Public/1333149240177713152/%E6%98%AF%E7%9A%84_right135.svg"/>
+
+            </div> 
+            <div class="list-item">
+                <img class="list-item-img-left" src="http://img1.imgtn.bdimg.com/it/u=1061187488,1643887661&fm=23&gp=0.jpg" />
+                <div style="width:calc(100% - 19rem);float:left;padding-left:2rem;">
+                    <span class="list-item-title">中共十八大以来打虎拍蝇 </span>
+                    <br />
+                    <span class="list-item-title-small">2017-01-06 11:21:30 </span>
+                </div>
+                <img class="list-item-img-right" src="http://www.iconsvg.com/Public/1333149240177713152/%E6%98%AF%E7%9A%84_right135.svg" />
+
+            </div> 
+            <div class="list-item">
+                <img class="list-item-img-left" src="http://img1.imgtn.bdimg.com/it/u=1061187488,1643887661&fm=23&gp=0.jpg" />
+                <div style="width:calc(100% - 19rem);float:left;padding-left:2rem;">
+                    <span class="list-item-title">中共十八大以来打虎拍蝇 </span>
+                    <br />
+                    <span class="list-item-title-small">2017-01-06 11:21:30 </span>
+                </div>
+                <img class="list-item-img-right" src="http://www.iconsvg.com/Public/1333149240177713152/%E6%98%AF%E7%9A%84_right135.svg" />
+
+            </div> 
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#menu').click(function(){
+            //$('.main-nav').removeClass('main-nav-close');
+            $('.progress-blue').addClass('progress-sucess');
+            setInterval(function () {
+                if ($('.progress-blue').hasClass('progress-sucess')) {
+                    $('.progress-blue').removeClass('progress-sucess');
+                } else{
+                    $('.progress-blue').addClass('progress-sucess');
+                }
+                },1000);
+        });
+        $('.main-nav').click(function () {
+            $('.main-nav').addClass('main-nav-close');
+        });
+    });
+</script>
