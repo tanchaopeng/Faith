@@ -3,16 +3,11 @@
     ViewBag.Title = "Index";
 }
 <script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script src="~/scripts/custom.js"></script>
 <div class="main-nav main-nav-close">
 
 </div>
-<div>
-    <div class="progress-bar">
-        <div class="progress-blue">
 
-        </div>
-    </div>
-</div>
 <div class="main-top">
     <div class="page-title">
         <img class="page-title-icon" id="menu"  style="margin-left:4rem;margin-top:5rem;float:left;" src="http://www.iconsvg.com/Public/1333158652084740096/%E8%8F%9C%E5%8D%95_menu55.svg"/>
@@ -63,17 +58,14 @@
     $(document).ready(function () {
         $('#menu').click(function(){
             //$('.main-nav').removeClass('main-nav-close');
-            $('.progress-blue').addClass('progress-sucess');
-            setInterval(function () {
-                if ($('.progress-blue').hasClass('progress-sucess')) {
-                    $('.progress-blue').removeClass('progress-sucess');
-                } else{
-                    $('.progress-blue').addClass('progress-sucess');
-                }
-                },1000);
+            //
+            progressShow();
         });
         $('.main-nav').click(function () {
             $('.main-nav').addClass('main-nav-close');
         });
     });
+
+    
+
 </script>
