@@ -47,7 +47,7 @@ namespace Common
             {
                 
                 HttpWebRequest Request = (HttpWebRequest)WebRequest.Create(Url);
-                Request.Method = "post";
+               
                 Request.Accept = "text/html, application/xhtml+xml, */*";
                 Request.ContentType = "application/x-www-form-urlencoded";
                 Request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko";

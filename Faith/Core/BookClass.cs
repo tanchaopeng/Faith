@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Common;
+using Faith.Models;
+using HtmlAgilityPack;
+using ScrapySharp.Extensions;
 
 namespace Faith.Core
 {
@@ -18,17 +21,26 @@ namespace Faith.Core
         /// <summary>
         /// 笔趣阁5200百度站内搜索
         /// </summary>
-        string BaiduSearchHost = "http://zhannei.baidu.com/cse/search?s=287293036948159515&q=";
+        string BaiduSearchHost = "http://zhannei.baidu.com/cse/search?s=287293036948159515&q={0}";
         public void List(string bookName)
         {
             try
             {
                 var html = HttpHelper.HttpGet(string.Format(BaiduSearchHost, bookName));
-                html =  StringHelper.GetHtmlElement(html,"div",11);
+                var doc = new HtmlDocument();
+                doc.LoadHtml(html);
+
+                var docNode = doc.DocumentNode;
+                //result-list
+                var nodes = docNode.CssSelect(".result-list");
+                foreach (var htmlNode in nodes)
+                {
+                    Console.WriteLine(htmlNode.InnerText);
+                }
                 var bookList = StringHelper.GetHtmlElementList(html, "div", 0, StringHelper.StringMidType.带标记);
                // var bookHtmlList = StringHelper.MidStringToList(html,,);
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
                 throw;

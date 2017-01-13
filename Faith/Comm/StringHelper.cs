@@ -132,20 +132,32 @@ namespace Common
                 int s = 0, e = 0;
                 var regE = Regex.Matches(source, "</" + sTag + ">");
 
+                if (smt== StringMidType.带标记)
+                {
+                    //开始位置
+                    s = reg[index].Index;
+
+                    var _html = source.Substring(s, source.Length - s);
+
+                    //结束位置
+                    e = regE[regE.Count - index].Index + ("</" + sTag + ">").Length;
+                }
+                else if (smt == StringMidType.去标记)
+                {
+
+                }
+
                 switch (smt)
                 {
                     case StringMidType.带标记:
-                        //开始位置
-                        s = reg[index].Index;
-                        //结束位置
-                        e = regE[index].Index+ ("</" + sTag + ">").Length;
+                       
                         break;
                     case StringMidType.去标记:
                         //开始位置
                         s = reg[index].Index;
                         s = source.IndexOf(">", s) + 1;
                         //结束位置
-                        e = regE[index].Index;
+                        e = regE[regE.Count-index].Index;
                         break;
                     default:
                         break;

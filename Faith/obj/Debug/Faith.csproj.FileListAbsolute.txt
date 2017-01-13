@@ -102,3 +102,10 @@ C:\Users\tanch\Source\Repos\Faith\Faith\bin\zh-Hans\System.Web.Mvc.resources.dll
 C:\Users\tanch\Source\Repos\Faith\Faith\obj\Debug\Faith.csprojResolveAssemblyReference.cache
 C:\Users\tanch\Source\Repos\Faith\Faith\obj\Debug\Faith.dll
 C:\Users\tanch\Source\Repos\Faith\Faith\obj\Debug\Faith.pdb
+C:\Users\tanch\Source\Repos\Faith\Faith\bin\FSharp.Core.dll
+C:\Users\tanch\Source\Repos\Faith\Faith\bin\HtmlAgilityPack.dll
+C:\Users\tanch\Source\Repos\Faith\Faith\bin\ScrapySharp.Core.dll
+C:\Users\tanch\Source\Repos\Faith\Faith\bin\ScrapySharpAsync.dll
+C:\Users\tanch\Source\Repos\Faith\Faith\bin\FSharp.Core.xml
+C:\Users\tanch\Source\Repos\Faith\Faith\bin\HtmlAgilityPack.pdb
+C:\Users\tanch\Source\Repos\Faith\Faith\bin\HtmlAgilityPack.xml
